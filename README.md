@@ -78,7 +78,7 @@ When high-intent leads request immediate contact, traditional brittle webhooks b
 
 ### Architecture Blueprint & Execution Canvas
 
-![n8n Architecture Canvas](/.fault-tolerant-lead-triage-architecture.png)
+![n8n Architecture Canvas](./fault-tolerant-lead-triage-architecture.png)
 
 #### Live 9.1s Execution Telemetry Trace
 
