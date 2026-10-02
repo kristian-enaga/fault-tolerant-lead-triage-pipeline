@@ -1,5 +1,16 @@
 # ⚡ Fault-Tolerant Lead Triage & Self-Healing CRM Pipeline
 
+> ### ⚡ Executive Summary
+> **Production-grade GTM automation that turns raw, unpredictable webform leads into cleansed, AI-qualified, high-intent pipeline in under 5 seconds.**
+>
+> * **Zero-Downtime Infrastructure:** Filters bots, invalid emails, and malformed phone numbers before they touch your CRM.
+> * **Hybrid AI Lead Scoring:** Uses Gemini/Groq + Clay enriched context for dynamic lead tiering, strict schema gating, and idempotent HubSpot upserts.
+> * **Instant Multi-Channel Dispatch:** Drives sub-5-second speed-to-lead via priority Slack/WhatsApp alerts and personalized Gmail outreach.
+> * **Failover Resilience:** Unhandled API exceptions and 429 rate limits automatically route to a Supabase Dead-Letter Queue (DLQ) for 100% data retention.
+> 
+> **Tech Stack:** `n8n` • `HubSpot` • `Clay` • `Gemini / Groq` • `Supabase (DLQ)` • `Slack` • `WhatsApp` • `Gmail`
+
+---
 > Production-grade n8n automation that delivers zero-downtime inbound lead processing, dynamic payload cleansing, schema verification, auto-healing error handling, and instant Slack notifications.
 
 [![Loom Walkthrough](https://img.shields.io/badge/Loom-Watch_Video-6666FF?style=for-the-badge&logo=loom)](https://www.loom.com/share/5d9a49197b574216894cc00822f0069f)
