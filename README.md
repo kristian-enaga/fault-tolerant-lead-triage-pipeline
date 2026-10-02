@@ -48,18 +48,18 @@ This architecture introduces **Zero-Downtime Infrastructure** using n8n, Supabas
 
 When high-intent leads request immediate contact, traditional brittle webhooks break on payload anomalies or CRM outages. This pipeline converts fragile endpoint connections into a high-reliability revenue router.
 
-[ Inbound Lead Webhook]
+[ Inbound Lead Webhook ]
 │
 ▼
-[ Payload Cleansing & Validation]
+[ Payload Cleansing & Validation ]
 │
-
 ┌───────┴───────┐
-│ Valid │ Malformed / Error
-▼ ▼
-[ HubSpot CRM] [ Supabase DLQ Storage] ────▶ [ Failover Notification]
-│ ├──▶ [ Priority Slack Alert]
-└──▶ [ Instant Email Delivery]
+│ Valid         │ Malformed / Error
+▼               ▼
+[ HubSpot CRM ] [ Supabase DLQ Storage ] ────▶ [ Failover Notification ]
+│
+├──▶ [ Priority Slack Alert ]
+└──▶ [ Instant Email Delivery ]
 
 
 ---
