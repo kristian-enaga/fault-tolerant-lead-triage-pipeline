@@ -53,6 +53,7 @@ When high-intent leads request immediate contact, traditional brittle webhooks b
 ▼
 [ Payload Cleansing & Validation]
 │
+
 ┌───────┴───────┐
 │ Valid │ Malformed / Error
 ▼ ▼
