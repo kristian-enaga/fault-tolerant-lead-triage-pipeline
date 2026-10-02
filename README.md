@@ -1,14 +1,14 @@
 # ⚡ Fault-Tolerant Lead Triage & Self-Healing CRM Pipeline
 
 > ### ⚡ Executive Summary
-> **Production-grade GTM automation that turns raw, unpredictable webform leads into cleansed, AI-qualified, high-intent pipeline in under 5 seconds.**
+> **Production-grade GTM Lead Triage Engine built in n8n that ingests raw inbound webhooks, enforces strict payload cleansing, scores intent via dual-LLM (Gemini / Groq) routing, and safely updates HubSpot while dispatching real-time Slack alerts.**
 >
-> * **Zero-Downtime Infrastructure:** Filters bots, invalid emails, and malformed phone numbers before they touch your CRM.
-> * **Hybrid AI Lead Scoring:** Uses Gemini/Groq + Clay enriched context for dynamic lead tiering, strict schema gating, and idempotent HubSpot upserts.
-> * **Instant Multi-Channel Dispatch:** Drives sub-5-second speed-to-lead via priority Slack/WhatsApp alerts and personalized Gmail outreach.
-> * **Failover Resilience:** Unhandled API exceptions and 429 rate limits automatically route to a Supabase Dead-Letter Queue (DLQ) for 100% data retention.
-> 
-> **Tech Stack:** `n8n` • `HubSpot` • `Clay` • `Gemini / Groq` • `Supabase (DLQ)` • `Slack` • `WhatsApp` • `Gmail`
+> * **Payload Sanitization & Guardrails:** JS regex nodes strip bad formatting, sanitize email/phone payloads, and drop bot spam before downstream CRM processing.
+> * **Dynamic LLM Fallback Routing:** Routes lead evaluation between OpenRouter (fast-path tiering) and Gemini (deep context scoring) with structured schema validation.
+> * **Idempotent CRM Sync:** Ensures zero duplicate leads in HubSpot via search-before-upsert logic and structured property mappings.
+> * **Real-Time Pipeline Visibility:** Formats key lead metrics, tier ratings, and routing diagnostics directly into priority Slack notifications.
+>
+> **Tech Stack:** `n8n` • `JavaScript` • `HubSpot` • `Gemini` • `OpenRouter` • `Slack` • `Gmail` • `Supabase/PostgreSQL` • `Clay` • `Google Sheet`
 
 ---
 > Production-grade n8n automation that delivers zero-downtime inbound lead processing, dynamic payload cleansing, schema verification, auto-healing error handling, and instant Slack notifications.
@@ -248,3 +248,17 @@ GTM Systems Integration & AI Automation Engineer
 
 - **Loom Video Demo**: [System Walkthrough Video](https://www.loom.com/share/5d9a49197b574216894cc00822f0069f)
 - **GitHub**: [kristian-enaga](https://github.com/kristian-enaga)
+
+
+---
+
+## 📈 Engineering Roadmap & Milestone
+
+* **Roadmap Phase:** Phase 2 (Automation Engineering)
+* **Sprint Tracker:** Sprint 3 — JSON Data Engineering & Portfolio Documentation
+* **Build Milestone:** Completed (Day 60/153 Target)
+
+### 🎯 Current Sprint Focus
+* **Data Integrity & Schema Gates:** Zero-downtime JSON parsing, payload sanitization, and fallback array structures to handle variable webhook payloads.
+* **Resilient AI Operations:** Dual-provider LLM routing (Groq/Gemini) with strict schema gating to prevent JSON output corruption from hitting downstream CRM properties.
+* **GTM Systems Portfolio:** Production-ready GitHub documentation layer featuring full architecture blueprints, live execution telemetry traces, and clear ROI metrics for foreign B2B clients.
