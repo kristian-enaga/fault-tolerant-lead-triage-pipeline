@@ -41,7 +41,7 @@ This architecture introduces **Zero-Downtime Infrastructure** using n8n, Supabas
 
 - [Problem & Value](#problem--value)
 - [Features](#features)
-- [Architecture & How It Works](#architecture--how-it-works)
+- [Architecture & How It Works](##🏗️architecture--how-it-works)
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
 - [Configuration](#configuration)
