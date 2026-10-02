@@ -78,11 +78,11 @@ When high-intent leads request immediate contact, traditional brittle webhooks b
 
 ### Architecture Blueprint & Execution Canvas
 
-![n8n Architecture Canvas](./docs/fault-tolerant-lead-triage-architecture.png)
+![n8n Architecture Canvas](./fault-tolerant-lead-triage-architecture.png)
 
 #### Live 9.1s Execution Telemetry Trace
 
-![Execution Success Trace](./n8n-live-execution-success-trace.png)
+![Execution Success Trace](./fault-tolerant-pipeline-execution-proof.png)
 
 ### Execution Flow
 
